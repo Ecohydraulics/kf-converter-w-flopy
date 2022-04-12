@@ -1,4 +1,10 @@
-# libs
+"""
+Module for calling the modflow model as a function and computing kf arrays
+
+@author: Lydia Seitz, Beatriz Negreiros
+
+"""
+
 import os
 import math
 import numpy as np
@@ -21,7 +27,6 @@ def compute_kf(q_meas, l_z, thck_pm, b_div_a, kf_start=1e-5, eps=1e-5):
 
     while math.isnan(constant_head_well_q):
         # wirkliche gemessene Rate (wird intern noch aus Symetriegründen durch 4 geteilt)
-        # q_meas = 3.632e-5  # m³/s
 
         # Abbruch Kriterium, eps = 1e-4 heißt auf 4 Nachkommastellen genau
 

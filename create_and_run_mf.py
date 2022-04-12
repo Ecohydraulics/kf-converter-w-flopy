@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Apr 24 10:42:26 2019
+Module for creating and running one individual modow model
 
 @author: alki
 """
