@@ -5,12 +5,8 @@ Module for calling the modflow model as a function and computing kf arrays
 
 """
 
-import os
-import math
-import numpy as np
-import flopy.utils.binaryfile as bf
+from config import *
 from create_and_run_mf import create_and_run_mf
-import pandas as pd
 
 #######################################################################
 # Input Parameter

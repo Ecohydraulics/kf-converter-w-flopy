@@ -1,13 +1,10 @@
-# -*- coding: utf-8 -*-
 """
 Created on Wed Apr 24 10:42:26 2019
 Module for creating and running one individual modow model
 
 @author: alki
 """
-import os
-import flopy.modflow as fpm
-import numpy as np
+from config import *
 
 
 def create_and_run_mf(mfName='',
