@@ -9,6 +9,7 @@ This repository contains codes for running a calibrated MODFLOW model via Python
 The model files living in *002_kf_wert_bestimmung* are se solely for the consiguration of the filter pipes developed according to the aforementioned Thesis (e.g., pipe diameter, perforation diameters and meshes). The codes are on the other hand re-usable if the model files are adjusted accordingly.
 
 ## Running the code
+At first, checkout the *requirements.txt* file and install the necessary dependencies before moving forward.
 
 Navigate to *compute_kf.py* and adjust the necessary input parameters for the function compute_kf. Necessary input data are:
 - Slurping rates (in m³/s)
