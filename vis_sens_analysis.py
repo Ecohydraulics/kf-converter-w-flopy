@@ -1,7 +1,4 @@
 from config import *
-import plotly.express as px
-import matplotlib.pyplot as plt
-from matplotlib.ticker import FormatStrFormatter
 
 # Read csv as df
 df_kfs = pd.read_csv('computed_kfs.csv', delimiter=',', index_col=0)
@@ -39,7 +36,8 @@ for meas in meas_array:
                                label=method,
                                s=30,
                                marker=marker_list[method],
-                               grid=True)
+                               grid=True,
+                               alpha=0.5)
     ax.set_xlabel('kf [m/s]')
     ax.set_ylabel('Sediment depth [m]')
     ax.xaxis.set_label_position('top')  # axis label is located on the top, instead of on the bottom as usual
