@@ -161,12 +161,14 @@ if __name__ == '__main__':
     df_outputs['sample'] = df_inputs['sample']
     for kc in KC_w_different_porosities:
         df_inputs['a_forchheimer'] = 1 / df_inputs[kc]
+        kf_array = np.array([])
         for meas in range(0, df_inputs.shape[0]):
             slurp_rate = df_inputs['slurp_rate1'].iloc[meas] * 1e-6  # in m³/s
             lz = df_inputs['lz'].iloc[meas]
             th_pm = df_inputs['depth'].iloc[meas]
             b_div_a = df_inputs['b_forchheimer'].iloc[meas] / df_inputs['a_forchheimer'].iloc[meas]
             kf = compute_kf(slurp_rate, lz, th_pm, b_div_a)
-            df_outputs['kf' + kc] = kf
-
-    df_outputs.to_csv('computed_kfs.csv')
+            kf_array = np.append(kf_array, kf)
+            print(kf_array)
+        df_outputs[kc] = kf_array
+        df_outputs.to_csv('computed_kfs.csv')  # write results within the loop
