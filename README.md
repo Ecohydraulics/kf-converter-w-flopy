@@ -11,7 +11,7 @@ The model files living in *002_kf_wert_bestimmung* are se solely for the consigu
 ## Running the code
 At first, checkout the *requirements.txt* file and install the necessary dependencies before moving forward.
 
-Navigate to *compute_kf.py* and adjust the necessary input parameters for the function compute_kf. Necessary input data are:
+Navigate to *compute_kf.py* and adjust the necessary input parameters for the function compute_kf. Necessary input data are read from the *input-data.xlsx* table:
 - Slurping rates (in m³/s)
 - Lz: Sediment depth + Water level (in m)
 - Th_pm: Sediment depth (in m) of the measurement
