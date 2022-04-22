@@ -1,7 +1,7 @@
 # kf-converter-w-flopy
 Computes the hydraulic conductivity of the hyporheic zone using a modflow model via flopy.
 
-Contributors: Lydia Seitz, Beatriz Negreiros, Daniel Beetz, Alcides Galdos
+Contributors: Lydia Seitz, Beatriz Negreiros.
 
 ## Welcome
 This repository contains codes for running a calibrated MODFLOW model via Python with the flopy library for determining hydraulic conductivity values in the hyporheic zone. The input data consist of slurping rates, measured according to [Seitz (2022)](https://henry.baw.de/bitstream/20.500.11970/107414/1/276_Mitteilungen_UniStuttgart_Seitz.pdf). 
